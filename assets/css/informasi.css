@@ -1,0 +1,68 @@
+body {
+	margin-top: 60px;
+}
+
+.navbar {
+	background-color: #FFD523;
+	height: 60px
+}
+
+.icon {
+	margin-left: 10px;
+	width: 100px;
+	height: 50px;
+}
+
+.navbar-brand,
+.nav-link {
+	color: black;
+}
+
+.navbar-nav {
+	font-size: 20px;
+	margin-left: 100px;
+}
+
+/* Jumbotron */
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron p {
+	font-family: comic sans ms;
+	text-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
+	position: relative;
+	top: 250px;
+}
+
+hr {
+	width: 350px;
+	border-top: 2px solid black;
+}
+
+.about p {
+	line-height: 2em;
+	text-align: justify;
+}
+
+section {
+	min-height: 350px;
+}
+
+.banner img {
+	width: 100%;
+	height: 350px;
+}
+
+.banner h2 {
+	position: absolute;
+	bottom: -600px;
+	left: 500px;
+	color: white;
+}
+
+.contact img {
+	width: 284px;
+}
+
+.clear {
+	margin-top: 110px;
+}

@@ -113,7 +113,7 @@
             <div class="col-sm-4">
                 <center>
                     <a href="https://wa.me/+6289652471945">
-                        <img src="<?php echo base_url() ?>assets/img/wa_icon.png">
+                        <img src="<?php echo base_url() ?>assets/img/icon/wa_icon.png">
                     </a>
                 </center>
                 <h5 class="text-center">089652471945</h5>
@@ -122,7 +122,7 @@
             <div class="col-sm-4">
                 <center>
                     <a href="#">
-                        <img src="<?php echo base_url() ?>assets/img/email_icon.png">
+                        <img src="<?php echo base_url() ?>assets/img/icon/email_icon.png">
                     </a>
                 </center>
                 <h5 class="text-center">pariwisatajakarta@gmail.com</h5>
@@ -131,7 +131,7 @@
             <div class="col-sm-4">
                 <center>
                     <a href="https://www.instagram.com/jktinfo/">
-                        <img src="<?php echo base_url() ?>assets/img/ig_icon.png">
+                        <img src="<?php echo base_url() ?>assets/img/icon/ig_icon.png">
                     </a>
                 </center>
                 <h5 class="text-center">@jktinfo</h5>

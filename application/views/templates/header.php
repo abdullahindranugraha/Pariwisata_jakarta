@@ -12,23 +12,27 @@
     <!--CSS Untuk Banner, karena di file css tidak bisa menggunakan php untuk memanggil base url -->
     <style>
         .banner1 {
-            background-image: url("<?php echo base_url() ?>assets/img/monas.jpg");
+            background-image: url("<?php echo base_url() ?>assets/img/banner/monas.jpg");
         }
 
         .banner2 {
-            background-image: url("<?php echo base_url() ?>assets/img/old.jpg");
+            background-image: url("<?php echo base_url() ?>assets/img/banner/old.jpg");
         }
 
         .banner3 {
-            background-image: url("<?php echo base_url() ?>assets/img/123.jpg");
+            background-image: url("<?php echo base_url() ?>assets/img/banner/123.jpg");
         }
 
         .banner4 {
-            background-image: url("<?php echo base_url() ?>assets/img/jakarta-city.jpg");
+            background-image: url("<?php echo base_url() ?>assets/img/banner/jakarta-city.jpg");
         }
 
-        .pariwisata {
-            background-image: url("<?php echo base_url() ?>assets/img/bg.png");
+        .bg-wisata {
+            background-image: url("<?php echo base_url() ?>assets/img/banner/bg.png");
+        }
+
+        .banner-sejarah {
+            background-image: url("<?php echo base_url() ?>assets/img/banner/m.jpg");
         }
     </style>
 </head>
@@ -36,8 +40,7 @@
 <body>
     <nav class="navbar navbar-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="" class="icon"></a>
-            <!-- <h1 class="h1"><?= $judul; ?></h1> -->
+            <a class="navbar-brand" href="<?php echo base_url() ?>informasi"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="" class="icon"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,7 +66,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Kuliner</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url() ?>informasi/kuliner">Kuliner</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -73,11 +76,11 @@
                             Akun
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('user') ?>">Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Login/Register</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('autentifikasi') ?>">Login/Register</a></li>
                         </ul>
                     </ul>
                 </div>

@@ -28,7 +28,7 @@
         }
 
         .bg-wisata {
-            background-image: url("<?php echo base_url() ?>assets/img/banner/bg.png");
+            background-image: url("<?php echo base_url() ?>assets/img/bg.png");
         }
 
         .banner-sejarah {

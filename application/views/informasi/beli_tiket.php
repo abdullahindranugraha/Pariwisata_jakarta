@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="form-group float-right mt-3">
-                        <a href="<?= base_url('admin'); ?>" class="btn btn-secondary">Batal</a>
+                        <a href="<?= base_url('informasi/wisata'); ?>" class="btn btn-secondary">Batal</a>
                         <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                     </form>

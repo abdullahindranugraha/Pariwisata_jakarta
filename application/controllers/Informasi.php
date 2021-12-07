@@ -52,7 +52,6 @@ class Informasi extends CI_Controller
     public function e_tiket()
     {
         $data['judul'] = 'E-Ticket';
-        $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
         $data['tiket'] = $this->ModelUser->tiketWhere(['email' => $this->session->userdata('email')])->result_array();
         $this->load->view('templates/header', $data);
         $this->load->view('informasi/e_ticket', $data);

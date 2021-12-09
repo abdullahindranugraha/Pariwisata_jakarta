@@ -64,6 +64,63 @@ class Autentifikasi extends CI_Controller
         }
     }
 
+    public function registrasi()
+    {
+        if ($this->session->userdata('email')) {
+            redirect('user');
+        }
+        $this->form_validation->set_rules(
+            'nama',
+            'Nama Lengkap',
+            'required',
+            [
+                'required' => 'Nama Belum diisi!!'
+            ]
+        );
+        $this->form_validation->set_rules(
+            'email',
+            'Alamat Email',
+            'required|trim|valid_email|is_unique[user.email]',
+            [
+                'valid_email' => 'Email Tidak Benar!!',
+                'required' => 'Email Belum diisi!!',
+                'is_unique' => 'Email Sudah Terdaftar!'
+            ]
+        );
+        $this->form_validation->set_rules(
+            'password1',
+            'Password',
+            'required|trim|min_length[3]|matches[password2]',
+            [
+                'matches' => 'Password Tidak Sama!!',
+                'min_length' => 'Password Terlalu Pendek'
+            ]
+        );
+        $this->form_validation->set_rules('password2', 'Repeat Password', 'required|trim|matches[password1]');
+        if ($this->form_validation->run() == false) {
+            $data['judul'] = 'Registrasi Member';
+            $this->load->view('templates/login_header', $data);
+            $this->load->view('aute/registrasi');
+            $this->load->view('templates/login_footer');
+        } else {
+            $email = $this->input->post('email', true);
+            $data = [
+                'nama' => htmlspecialchars($this->input->post('nama', true)),
+                'email' => htmlspecialchars($email),
+                'image' => 'default.jpg',
+                'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+                'role_id' => 2,
+                'is_active' => 1,
+                'tanggal_input' => time()
+            ];
+            $this->ModelUser->simpanData($data);
+
+            $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Selamat!! akun member anda sudah dibuat.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>');
+            redirect('autentifikasi');
+        }
+    }
+
     function logout()
     {
         $this->session->unset_userdata('email');

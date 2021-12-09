@@ -9,6 +9,7 @@
     <title><?= $judul ?></title>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="<?php echo base_url() ?>assets/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="<?php echo base_url() ?>assets/img/logo.png">
 </head>
 
 <body id="page-top">

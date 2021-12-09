@@ -10,7 +10,7 @@ class User extends CI_Controller
 
     public function index()
     {
-        $data['judul'] = 'Profil Saya';
+        $data['judul'] = 'Profile Saya';
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('user/index', $data);
@@ -19,7 +19,7 @@ class User extends CI_Controller
 
     public function ubahProfil()
     {
-        $data['judul'] = 'Ubah Profil';
+        $data['judul'] = 'Ubah Profile';
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
         $this->form_validation->set_rules(
             'nama',

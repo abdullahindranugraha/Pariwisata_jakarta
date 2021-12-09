@@ -7,9 +7,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
-                            <?php if ($this->session->flashdata('pesan') == TRUE) : ?>
-                                <?php echo $this->session->flashdata('pesan') ?>
-                            <?php endif; ?>
+                            <?php echo $this->session->flashdata('pesan') ?>
                             <h3 class="login-heading mb-4">Selamat datang</h3>
 
                             <!-- Sign In Form -->

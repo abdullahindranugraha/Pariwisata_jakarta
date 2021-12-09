@@ -36,7 +36,7 @@
     </button>
 </div>
 <!-- Selesai carousel -->
-
+<?php echo $this->session->flashdata('pesan') ?>
 <!-- About -->
 <section class="about">
     <div class="container">

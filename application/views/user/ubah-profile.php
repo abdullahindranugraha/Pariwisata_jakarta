@@ -1,7 +1,7 @@
 <div class="content-stickyfooter">
     <div class="container-fluid">
         <div class="row">
-            <h1>Ubah Profile</h1>
+            <h1><?= $judul ?></h1>
             <div class="col-lg-9">
                 <?= form_open_multipart('user/ubahprofil'); ?>
                 <br>

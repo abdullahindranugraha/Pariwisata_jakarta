@@ -3,7 +3,7 @@
         <?php echo $this->session->flashdata('pesan') ?>
 
         <div class="profile">
-            <h1 class="text-center">Profile Saya</h1>
+            <h1 class="text-center"><?= $judul ?></h1>
             <div class="row">
                 <div class="col-sm-4">
                     <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" alt="...">

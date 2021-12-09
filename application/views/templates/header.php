@@ -70,7 +70,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">E-Ticket</a>
+                            <a class="nav-link" href="<?php echo base_url() ?>informasi/e_tiket">E-Ticket</a>
                         </li>
                         <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Akun
@@ -83,6 +83,7 @@
                             <li><a class="dropdown-item" href="<?php echo base_url('autentifikasi') ?>">Login/Register</a></li>
                         </ul>
                     </ul>
+                    <a class="navbar-brand" href="<?php echo base_url('admin') ?>"><img src="<?php echo base_url() ?>assets/img/icon/setting_icon.jpg" alt="" width="50" height="50">admin</a>
                 </div>
             </div>
         </div>

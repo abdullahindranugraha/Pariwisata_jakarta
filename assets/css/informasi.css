@@ -124,3 +124,7 @@ section {
 	object-fit: cover;
 	border-radius: 50%;
 }
+
+.content-stickyfooter {
+	min-height: calc(100vh - 130px);
+}

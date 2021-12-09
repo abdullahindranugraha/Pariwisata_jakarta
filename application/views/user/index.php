@@ -1,9 +1,9 @@
-<div class="content">
+<div class="content-stickyfooter">
     <div class="container-fluid">
         <?php echo $this->session->flashdata('pesan') ?>
 
         <div class="profile">
-            <h1 class="text-center">Profil Saya</h1>
+            <h1 class="text-center">Profile Saya</h1>
             <div class="row">
                 <div class="col-sm-4">
                     <img src="<?= base_url('assets/img/profile/') . $user['image']; ?>" alt="...">

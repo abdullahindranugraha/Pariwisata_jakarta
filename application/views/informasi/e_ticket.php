@@ -1,17 +1,18 @@
-<section class="bg-light" id="anggota">
+<div class="content-stickyfooter bg-light">
     <div class="container">
         <h1 class="text-center">E-tiket</h1>
         <table class="table table-hover">
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>nama pariwisata</th>
-                    <th>nama Pembeli</th>
-                    <th>email</th>
-                    <th>tanggal kunjungan</th>
-                    <th>harga</th>
-                    <th>jumlah beli</th>
-                    <th>total</th>
+                    <th>Nama pariwisata</th>
+                    <th>Nama Pembeli</th>
+                    <th>Email</th>
+                    <th>Tanggal Kunjungan</th>
+                    <th>Harga</th>
+                    <th>Jumlah Beli</th>
+                    <th>Total</th>
+                    <th>Id Tiket</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,9 +28,10 @@
                         <td>RP. <?= $a['harga']; ?></td>
                         <td><?= $a['jumlah_beli']; ?></td>
                         <td>Rp. <?= $a['total_bayar']; ?></td>
+                        <td><?= $a['id_tiket']; ?></td>
                     </tr>
                 <?php } ?>
             </tbody>
         </table>
     </div>
-</section>
+</div>

@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content-stickyfooter">
     <div class="container-fluid">
         <div class="row">
             <h1>Ubah Profile</h1>

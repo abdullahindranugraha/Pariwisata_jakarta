@@ -49,7 +49,12 @@
                     <div class="form-group row">
                         <label for="tanggal" class="col-sm-3 col-form-label">Tanggal Kunjungan</label>
                         <div class="col-sm-9">
-                            <input type="date" class="form-control formcontrol-user" id="tanggal" name="tanggal" placeholder="Tanggal Kunjungan"><br>
+                            <input type="date" class="form-control formcontrol-user" id="tanggal" name="tanggal" placeholder="Tanggal Kunjungan" required><br>
+                            <?= form_error(
+                                'tanggal',
+                                '<small class="text-danger pl-3">',
+                                '</small>'
+                            ); ?>
                         </div>
                     </div>
 

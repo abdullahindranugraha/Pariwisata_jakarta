@@ -18,7 +18,7 @@ function cek_user()
 
     $role_id = $ci->session->userdata('role_id');
     if ($role_id != 1) {
-        $ci->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Akses tidak diizinkan </div><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        $ci->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Akses Tidak diizinkan!!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>');
         redirect('informasi');
     }

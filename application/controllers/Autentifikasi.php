@@ -46,20 +46,24 @@ class Autentifikasi extends CI_Controller
                         redirect('admin');
                     } else {
                         if ($user['image'] == 'default.jpg') {
-                            $this->session->set_flashdata('pesan', '<div class="alert alert-info alert-message" role="alert">Silahkan Ubah Profile Anda untuk Ubah Photo Profil</div>');
+                            $this->session->set_flashdata('pesan', '<div class="alert alert-info alert-dismissible fade show" role="alert">Silahkan Ubah Profile Anda untuk Ubah Photo Profil<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>');
                         }
                         redirect('user');
                     }
                 } else {
-                    $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Password salah!!</div>');
+                    $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">Password Salah !!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>');
                     redirect('autentifikasi');
                 }
             } else {
-                $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">User belum diaktifasi!!</div>');
+                $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">User belum diaktifasi!!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>');
                 redirect('autentifikasi');
             }
         } else {
-            $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Email tidak terdaftar!!</div>');
+            $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">Email Tidak Terdaftar!!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>');
             redirect('autentifikasi');
         }
     }
@@ -125,7 +129,8 @@ class Autentifikasi extends CI_Controller
     {
         $this->session->unset_userdata('email');
         $this->session->unset_userdata('role_id');
-        $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Anda telah Logout!</div>');
+        $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Anda Telah Logout !<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>');
         redirect('autentifikasi');
     }
 }

@@ -1,7 +1,7 @@
 <div class="content-stickyfooter">
     <div class="container-fluid">
-        <?php echo $this->session->flashdata('pesan') ?>
-
+        <?= $this->session->flashdata('pesan'); ?>
+        <?php unset($_SESSION['pesan']); ?>
         <div class="profile">
             <h1 class="text-center"><?= $judul ?></h1>
             <div class="row">

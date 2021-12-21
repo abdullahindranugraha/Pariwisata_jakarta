@@ -8,6 +8,7 @@
                     <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
                             <?php echo $this->session->flashdata('pesan') ?>
+                            <?php unset($_SESSION['pesan']); ?>
                             <h3 class="login-heading mb-4">Selamat datang</h3>
 
                             <!-- Sign In Form -->

@@ -28,6 +28,9 @@ class Informasi extends CI_Controller
         $this->form_validation->set_rules('tanggal', 'tanggal', 'required', [
             'required' => 'tanggal harus diisi',
         ]);
+        $this->form_validation->set_rules('jumlah_beli', 'Jumlah Beli', 'required', [
+            'required' => 'Jumlah Beli tidak boleh kosong',
+        ]);
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header', $data);
             $this->load->view('informasi/beli_tiket', $data);

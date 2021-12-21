@@ -16,6 +16,7 @@
             </div>
         <?php } ?>
         <?= $this->session->flashdata('pesan'); ?>
+        <?php unset($_SESSION['pesan']); ?>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Tambah Data Pariwisata

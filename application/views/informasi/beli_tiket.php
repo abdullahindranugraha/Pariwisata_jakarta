@@ -62,6 +62,11 @@
                         <label for="jumlah_beli" class="col-sm-3 col-form-label">Jumlah Beli:</label>
                         <div class="col-sm-9">
                             <input type="number" class="form-control formcontrol-user" id="jumlah_beli" name="jumlah_beli" min="1" max="100" value="1">
+                            <?= form_error(
+                                'jumlah_beli',
+                                '<small class="text-danger pl-3">',
+                                '</small>'
+                            ); ?>
                         </div>
                     </div>
 
